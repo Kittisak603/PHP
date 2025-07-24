@@ -31,6 +31,7 @@
         <li><a href="W01_01_introphp.php">Intro PHP</a></li>
         <li><a href="W02_01_oddEvaNumber.php">Odd-Even-Number</a></li>
         <li><a href="W02_02_grade.php">Calculate Grade</a></li>
+        <li><a href="W06_01_LoopProoduct.php">Loop for Show Product</a></li>
     </nl>   
     
 
