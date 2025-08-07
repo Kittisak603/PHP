@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro PHP</title>
 </head>
-
 <body>
     <h1>Welcom to PHP Basic</h1>
     <p>This is a simple application.</p>
@@ -32,6 +31,11 @@
         <li><a href="W02_01_oddEvaNumber.php">Odd-Even-Number</a></li>
         <li><a href="W02_02_grade.php">Calculate Grade</a></li>
         <li><a href="W06_01_LoopProoduct.php">Loop for Show Product</a></li>
+        <li><a href="W07_01_ConnectDB.php">Connect Database</a></li>
+        <li><a href="W07_02_fetchData.php">Fetch Data</a></li>
+        <li><a href="W08_01_ProductDB.php">Show Product (From )</a></li>
+
+        
     </nl>   
     
 
