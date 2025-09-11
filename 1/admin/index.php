@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 require_once '../config.php';  // เชื่อมต่อฐานข้อมูล
 require_once 'auth_admin.php';  
 

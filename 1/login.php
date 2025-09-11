@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'config.php';
+
 $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
