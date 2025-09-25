@@ -14,7 +14,7 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-//echo " PDO : Connected successfully (เชื่อมต่อสำเร็จ)";
+    //echo " PDO : Connected successfully (เชื่อมต่อสำเร็จ)";
 
 } catch (PDOException $e) {
     echo " PDO : Connection failed(เชื่อมต่อไม่สำเร็จ)" . $e->getMessage();

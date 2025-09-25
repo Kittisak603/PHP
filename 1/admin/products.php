@@ -122,7 +122,7 @@ $categories = $conn->query("SELECT * FROM categories")->fetchAll(PDO::FETCH_ASSO
           <select name="category_id" class="form-select" required>
             <option value="">เลือกหมวดหมู่</option>
             <?php foreach ($categories as $cat): ?>
-              <option value="<?= $cat['category_id'] ?>"><?= htmlspecialchars($cat['ชื่อหมวดหมู่']) ?></option>
+              <option value="<?= $cat['category_id'] ?>"><?= htmlspecialchars($cat['category_name']) ?></option>
             <?php endforeach; ?>
           </select>
         </div>

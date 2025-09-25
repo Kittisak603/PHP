@@ -40,7 +40,7 @@ if (isset($_GET['delete'])) {
         $stmt->execute([$category_id]);
         $_SESSION['success'] = "ลบหมวดหมู่เรียบร้อยแล้ว";
     }
-    header("Location: category.php");
+    header("Location: categories.php");
     exit;
 }
 // แก้ไขหมวดหมู่
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_category'])) {
     if ($category_name) {
         $stmt = $conn->prepare("UPDATE categories SET category_name = ? WHERE category_id = ?");
         $stmt->execute([$category_name, $category_id]);
-        header("Location: category.php");
+        header("Location: categories.php");
         exit;
     }
 }

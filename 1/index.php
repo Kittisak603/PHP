@@ -91,6 +91,7 @@ require_once 'config.php';  //เชื่อมต่อฐานข้อม�
       <span class="me-3">👋 <?= htmlspecialchars($_SESSION['username']) ?> (<?= $_SESSION['role'] ?>)</span>
       <a href="profile.php" class="btn btn-primary-custom btn-sm me-2">โปรไฟล์</a>
       <a href="cart.php" class="btn btn-primary-custom btn-sm me-2">ตะกร้า</a>
+      <a href="orders.php" class="btn btn-primary-custom btn-sm me-2">ประวัติการสั่งซื้อ</a>
       <a href="logout.php" class="btn btn-outline-primary btn-sm">ออก</a>
     <?php else: ?>
       <a href="login.php" class="btn btn-primary-custom btn-sm me-2">เข้าสู่ระบบ</a>
@@ -118,9 +119,9 @@ require_once 'config.php';  //เชื่อมต่อฐานข้อม�
             <div class="mt-auto d-flex gap-2">
               <?php if ($isLoggedIn): ?>
                 <form action="cart.php" method="post" class="d-inline-flex m-0">
-                  <input type="hidden" name="product_id" value="<?= (int)$p['product_id'] ?>">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-primary-custom btn-sm">เพิ่มในตะกร้า</button>
+                    <input type="hidden" name="product_id" value="<?= (int)$p['product_id'] ?>">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-primary-custom btn-sm">เพิ่มในตะกร้า</button>
                 </form>
               <?php else: ?>
                 <small class="text-muted">เข้าสู่ระบบเพื่อสั่งซื้อ</small>
